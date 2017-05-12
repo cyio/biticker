@@ -1,0 +1,18 @@
+{
+  "author": "chunghe",
+  "name": "biticker",
+  "description": "This is a script you could use to display realtime bitcoin exchange rate in your tmux status line",
+  "version": "0.1.6",
+  "repository": {
+    "url": "https://github.com/chunghe/nodejs-bitcoin-ticker"
+  },
+  "bin": {
+    "biticker": "./bin/biticker"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

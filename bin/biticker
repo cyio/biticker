@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+var https = require('https');
+
+var url = 'https://www.bitstamp.net/api/ticker/';
+
+https.get(url, function(res){
+    var rsp = '';
+
+    res.on('data', function (chunk){
+        rsp += chunk;
+    });
+
+    res.on('end',function(){
+        var data = JSON.parse(rsp);
+        console.log ('Last: ' + data.last + ' | Weighted Avg: ' + data.vwap);
+    })
+
+});
